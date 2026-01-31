@@ -69,3 +69,24 @@
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.02); } /* Pulso hacia afuera suave */
 }
+/* Ajuste para que los 4 círculos entren en una sola línea en móviles */
+@media (max-width: 576px) {
+  .simply-countdown-circle {
+    gap: 0.5rem !important; /* Reducimos el espacio entre círculos */
+    flex-wrap: nowrap !important; /* Prohibimos que se bajen */
+  }
+
+  .simply-countdown-circle > .simply-section {
+    width: 75px !important;  /* Círculos un poco más pequeños */
+    height: 75px !important;
+    padding: 0.5rem !important;
+  }
+
+  .simply-countdown-circle .simply-amount {
+    font-size: 1.2rem !important; /* Número más pequeño para que quepa */
+  }
+
+  .simply-countdown-circle .simply-word {
+    font-size: 0.55rem !important; /* Palabra más pequeña */
+  }
+}

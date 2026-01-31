@@ -1,0 +1,71 @@
+.simply-countdown-circle {
+  /* Definimos colores dorados y blanco */
+  --sc-circle-primary: #d4af37;   /* Dorado base */
+  --sc-circle-secondary: #f9e498; /* Dorado brillo */
+  --sc-circle-bg: #ffffff;        /* Fondo Blanco */
+  --sc-circle-text: #b8860b;      /* Texto dorado oscuro para legibilidad */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  font-family: 'Georgia', serif; /* Cambiado a serif para más elegancia */
+}
+
+.simply-countdown-circle > .simply-section {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  /* El borde exterior será el degradado dorado */
+  background: linear-gradient(45deg, var(--sc-circle-primary), var(--sc-circle-secondary));
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); /* Sombra dorada suave */
+  animation: pulse-circle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.simply-countdown-circle > .simply-section::before {
+  content: '';
+  position: absolute;
+  /* El 'inset' define el grosor del borde dorado */
+  inset: 4px; 
+  border-radius: 50%;
+  background: var(--sc-circle-bg); /* Fondo Blanco interior */
+  z-index: 0;
+}
+
+.simply-countdown-circle > .simply-section > div {
+  position: relative;
+  z-index: 1;
+  color: var(--sc-circle-text);
+  text-align: center;
+}
+
+.simply-countdown-circle .simply-amount {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  /* El número también tendrá el degradado dorado */
+  background: linear-gradient(to bottom, #b8860b, #d4af37);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.simply-countdown-circle .simply-word {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #8a6d3b; /* Color sólido para el texto pequeño */
+  font-weight: 600;
+}
+
+@keyframes pulse-circle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); } /* Pulso hacia afuera suave */
+}

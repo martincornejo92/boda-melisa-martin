@@ -699,3 +699,21 @@ footer li {
     }
 }
 
+.itinerary-section {
+    margin-top: 80px !important; /* Espacio extra hacia arriba */
+    padding-top: 40px;
+}
+
+.itinerary-title {
+    margin-bottom: 50px; /* Espacio entre el título y los iconos */
+}
+
+/* Si usas una sección con imagen de fondo (hero), 
+   esto evita que el itinerario se meta debajo de ella */
+#home {
+    clear: both;
+    position: relative;
+    z-index: 1;
+    background-color: white; /* O el color de tu fondo */
+}
+

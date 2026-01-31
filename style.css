@@ -611,3 +611,31 @@ footer li {
   }
 }
 
+/* Agranda el título de la sección */
+.itinerary-title.display-5 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* El texto entre comillas */
+.italic {
+    font-style: italic;
+    color: #555;
+}
+
+/* Ajuste específico para el texto dorado (Precio) */
+.text-golden-dark.fs-3 {
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+
+/* Tarjeta bancaria un poco más ancha para el texto grande */
+.bank-card {
+    max-width: 550px; /* Aumentado de 450px a 550px */
+}
+
+.alias-text strong {
+    color: #b8860b; /* Dorado para el nombre del alias */
+}
+

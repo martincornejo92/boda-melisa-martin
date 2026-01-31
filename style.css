@@ -639,31 +639,25 @@ footer li {
     color: #b8860b; /* Dorado para el nombre del alias */
 }
 
-/* Asegura que los H2 de ambas secciones sean iguales */
-.gifts h2, .gallery h2 {
-    font-size: 2.5rem; /* Ajusta según prefieras, pero igual para ambos */
-    margin-bottom: 25px;
-}
-
-/* Estilo para la frase entre comillas */
-.gifts p.fs-5 {
-    line-height: 1.6;
-    color: #444;
-}
-
-/* Tarjeta de banco con el mismo estilo de la polaroid pero sin foto */
-.bank-card {
+.thank-you-card {
     background-color: #ffffff;
+    padding: 20px;
     border-radius: 8px;
+    text-align: center;
     border: 1px solid #eee;
-    max-width: 500px;
 }
 
-.text-golden-dark {
-    color: #b8860b;
+.thank-you-card img {
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
 }
 
-.italic {
-    font-style: italic;
+.card-footer-text {
+    font-family: 'Arial Black', sans-serif; /* O la fuente que uses en tu proyecto */
+    font-size: 1.1rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 15px;
 }
 
